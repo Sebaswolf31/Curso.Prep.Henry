@@ -138,7 +138,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return math.pow (num,2);
+  return Math.pow (num,2);
 
   
 }
@@ -153,7 +153,7 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return math.pow (num, exponent);
+  return Math.pow (num, exponent);
 }
 
 function redondearNumero(num) {
@@ -185,7 +185,7 @@ function esPositivo(numero) {
   } else if (numero > 0){
       return "Es positivo";
     } else {
-      return "Es Negativo";
+      return "Es negativo";
      }
   }
 
@@ -260,7 +260,7 @@ function esVocal(letra){
   if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
     return "Es vocal";
   }
-  return "Dato icorrecto";
+  return "Dato incorrecto";
 
 }
 
