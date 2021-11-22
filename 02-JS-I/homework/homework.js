@@ -89,7 +89,7 @@ function menosQueNoventa(num) {
 
     return true;
   } else {  
-    return fasle;
+    return false;
     }
   }
 
