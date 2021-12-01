@@ -5,7 +5,7 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if ( x> y) {
+  if ( x > y) {
     return x;
   } else if (y > x ){
     return y;
@@ -18,7 +18,7 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if (edad > 18) {
+  if (edad >= 18) {
     return "Allowed";
   }else { 
     return "Not allowed"
@@ -32,11 +32,11 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if (status === 1){ 
-  return 'Online';
+  return "Online";
 }else if (status === 2){
-  return 'Away';
+  return "Away";
 } else {
-  return 'Offline';
+  return "Offline";
 }
 
 }
@@ -48,14 +48,14 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma === 'aleman'){
-    return 'Guten Tag!';
-  } else if (idioma === 'mandarin'){
-    return 'Ni Hao!';
-  }else if (idioma === ingles){
-    return 'Hello!';
+  if (idioma === "aleman"){
+    return "Guten Tag!";
+  } else if (idioma ===  "mandarin"){
+    return  "Ni Hao!";
+  }else if (idioma === "ingles"){
+    return "Hello!";
   } else {
-    return 'Hola!';
+    return "Hola!";
   }
 }
 
@@ -111,9 +111,16 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero % 15 === 0) return 'fizzbuzz';
-  if (numero % 3 === 0) return 'fizz';
-  if (numero % 5 === 0) return 'buzz'; 
+  
+  if (numero % 3 === 0 && numero % 5 === 0){
+    return "fizzbuzz";
+  } else if (numero % 5 === 0 ){
+    return "buzz";
+  } else if (numero % 3 === 0){
+    return "fizz";
+  } else {
+    return numero;
+  }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -174,7 +181,7 @@ function tablaDelSeis(){
   for (let i = 0; i < 11; i++) {
         arrayTablaDel6.push(6 * i)
   }
-  return arrayTablaDel6
+  return arrayTablaDel6;
 }
 
 function tieneTresDigitos(numero){
